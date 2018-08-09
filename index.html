@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; Charset=utf-8" />
+		<meta http-equiv="Content-Language" content="zh-CN" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<title>LongWang-一个java程序员的个人博客网站</title>
+		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+		<!--Layui-->
+		<link href="layui/css/layui.css" rel="stylesheet" />
+		<!--font-awesome-->
+		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+		<!--全局样式表-->
+		<link href="css/global.css" rel="stylesheet" />
+		<link href="css/animate.min.css" rel="stylesheet" />
+		<!-- 本页样式表 -->
+		<link href="css/index.css" rel="stylesheet" />
+		<link href="css/blog.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<nav id="h" class="blog-nav layui-header">
+			<div class="blog-container">
+
+				<a href="/QQ/qqLogin" class="blog-user">
+					<i class="fa fa-qq"></i>
+				</a>
+
+				<a class="blog-logo" href="index.html">Long</a>
+
+				<ul class="layui-nav" lay-filter="nav">
+					<li class="layui-nav-item">
+						<a href="index.html"><i class="fa fa-home fa-fw"></i>&nbsp;网站首页</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="article.html"><i class="fa fa-file-text fa-fw"></i>&nbsp;文章专栏</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="mixed_pic.html"><i class="fa fa-paper-plane-o fa-fw"></i>&nbsp;杂七杂八</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="timeline.html"><i class="fa fa-hourglass-half fa-fw"></i>&nbsp;点点滴滴</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="about.html"><i class="fa fa-info fa-fw"></i>&nbsp;关于本站</a>
+					</li>
+					<span class="layui-nav-bar"></span></ul>
+
+				<a class="blog-navicon" href="javascript:;">
+					<i class="fa fa-navicon"></i>
+				</a>
+			</div>
+		</nav>
+
+		<div class="blog-user"></div>
+
+		<div class="blog-body">
+			<div class="layui-carousel blog-bg" id="carousel" lay-anim="default" lay-indicator="inside" lay-arrow="always" style="width: 1170px; height: 360px;">
+				<div carousel-item="">
+					<div class="bg bg_a"></div>
+					<div class="bg bg_b"></div>
+					<div class="bg bg_c layui-this"></div>
+					<div class="bg bg_d"></div>
+					<div class="bg bg_e"></div>
+				</div>
+				<div class="layui-carousel-ind">
+					<ul>
+						<li class=""></li>
+						<li class=""></li>
+						<li class="layui-this"></li>
+						<li class=""></li>
+						<li class=""></li>
+					</ul>
+				</div><button class="layui-icon layui-carousel-arrow" lay-type="sub"></button><button class="layui-icon layui-carousel-arrow" lay-type="add"></button></div>
+			<div class="blog-container">
+				<div class="blog-main">
+
+					<div class="home-tips shadow">
+						<i style="float:left;line-height:17px;" class="fa fa-volume-up"></i>
+						<div class="home-tips-container">
+							<span style="color: rgb(0, 150, 136); cursor: pointer; display: none;"><p><span>网站处于试运行过程，如遇到bug，可以及时与我联系哦，首页左侧可以联系我，或者给我留言。</span></p>
+							</span><span style="color: rgb(0, 150, 136); cursor: pointer; display: block;"><p><span>Long博客&nbsp; —— &nbsp;一个Java程序员的个人博客，网站采用Layui为前端框架，记录技术交流，工作心得体会！</span></p>
+							</span><span style="color: rgb(0, 150, 136); cursor: pointer; display: none;">感谢您发现本站，由于某些原因导致数据库丢失，但本站内容会持续更新的。</span>
+						</div>
+					</div>
+
+					<div class="blog-main-left animated slideInLeft">
+						<div class="flow-default" id="parentArticleList">
+							<div class="article shadow animated zoomIn">
+								<div class="article-left ">
+									<img src="img/jzytp.JPG" alt="Tomcat优化性能，JVM优化">
+								</div>
+								<div class="article-right">
+									<div class="article-title">
+										<span class="article_is_top">置顶</span>&nbsp;<span class="article_is_yc">原创</span>&nbsp;
+										<a href="detail.html">Tomcat优化性能，JVM优化</a>
+									</div>
+									<div class="article-abstract">
+										首先在开始之前我们需要知道，在不同的操作系统位数下，（即32位和64位）32位操作系统的JVM会受限于最大2G内存的限制。不管你物理机上有多少内存，JVM只能使用到2G,所</div>
+								</div>
+								<div class="clear"></div>
+								<div class="article-footer">
+									<span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;2018-07-27 09:34:33</span>
+									<span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;' 听雨·湘潭</span>
+									<span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="javascript:classifyList(10);"> Tomcat</a></span>
+									<span class="article-viewinfo"><i class="fa fa-eye"></i>&nbsp;286</span>
+									<span class="article-viewinfo"><i class="fa fa-commenting"></i>&nbsp;3</span>
+								</div>
+							</div>
+							<div class="article shadow animated zoomIn">
+								<div class="article-left ">
+									<img src="img/jzytp.JPG" alt="redis requires Ruby version >= 2.2.2问题">
+								</div>
+								<div class="article-right">
+									<div class="article-title">
+										<span class="article_is_yc">原创</span>&nbsp;
+										<a href="detail.html">redis requires Ruby version &gt;= 2.2.2问题</a>
+									</div>
+									<div class="article-abstract">
+										yum -y install ruby ruby-devel rubygems rpm-build gem install redis 其中&nbsp;gem inst</div>
+								</div>
+								<div class="clear"></div>
+								<div class="article-footer">
+									<span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;2018-08-07 21:32:40</span>
+									<span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;' 听雨·湘潭</span>
+									<span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="javascript:classifyList(7);"> Redis</a></span>
+									<span class="article-viewinfo"><i class="fa fa-eye"></i>&nbsp;46</span>
+									<span class="article-viewinfo"><i class="fa fa-commenting"></i>&nbsp;0</span>
+								</div>
+							</div>
+							<div class="article shadow animated zoomIn">
+								<div class="article-left ">
+									<img src="img/jzytp.JPG" alt="Spring Boot 表单验证@Valid">
+								</div>
+								<div class="article-right">
+									<div class="article-title">
+										<span class="article_is_yc">原创</span>&nbsp;
+										<a href="detail.html">Spring Boot 表单验证@Valid</a>
+									</div>
+									<div class="article-abstract">
+										SpringBoot提供了强大的表单验证功能实现，给我们省去了写验证的麻烦； &nbsp; 这里我们给下实例，提交一个有姓名和年龄的表单添加功能， 要求姓名不能为空，
+
+									</div>
+								</div>
+								<div class="clear"></div>
+								<div class="article-footer">
+									<span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;2018-08-01 22:33:28</span>
+									<span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;' 听雨·湘潭</span>
+									<span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="javascript:classifyList(5);"> SpringBoot</a></span>
+									<span class="article-viewinfo"><i class="fa fa-eye"></i>&nbsp;83</span>
+									<span class="article-viewinfo"><i class="fa fa-commenting"></i>&nbsp;0</span>
+								</div>
+							</div>
+							<div class="article shadow animated zoomIn">
+								<div class="article-left ">
+									<img src="img/jzytp.JPG" alt="Spring boot 使用 JSP">
+								</div>
+								<div class="article-right">
+									<div class="article-title">
+										<span class="article_is_yc">原创</span>&nbsp;
+										<a href="detail.html">Spring boot 使用 JSP</a>
+									</div>
+									<div class="article-abstract">
+										1、在pom.xml文件中配置依赖项 &lt;!--引入Spring Boot内嵌的Tomcat对JSP的解析包--&gt; &lt;dependency&gt;
+
+									</div>
+								</div>
+								<div class="clear"></div>
+								<div class="article-footer">
+									<span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;2018-07-27 15:33:38</span>
+									<span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;' 听雨·湘潭</span>
+									<span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="javascript:classifyList(5);"> SpringBoot</a></span>
+									<span class="article-viewinfo"><i class="fa fa-eye"></i>&nbsp;122</span>
+									<span class="article-viewinfo"><i class="fa fa-commenting"></i>&nbsp;1</span>
+								</div>
+							</div>
+							<div class="article shadow animated zoomIn">
+								<div class="article-left ">
+									<img src="img/jzytp.JPG" alt="Spring boot 下的 Spring mvc">
+								</div>
+								<div class="article-right">
+									<div class="article-title">
+										<span class="article_is_yc">原创</span>&nbsp;
+										<a href="detail.html">Spring boot 下的 Spring mvc</a>
+									</div>
+									<div class="article-abstract">
+										Spring boot下的Spring mvc 和之前的Spring mvc使用是完全一样的： @Controller &nbsp;&nbsp;&nbsp; 即为Spr</div>
+								</div>
+								<div class="clear"></div>
+								<div class="article-footer">
+									<span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;2018-07-27 15:28:35</span>
+									<span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;' 听雨·湘潭</span>
+									<span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="javascript:classifyList(5);"> SpringBoot</a></span>
+									<span class="article-viewinfo"><i class="fa fa-eye"></i>&nbsp;35</span>
+									<span class="article-viewinfo"><i class="fa fa-commenting"></i>&nbsp;0</span>
+								</div>
+							</div>
+							<div class="article shadow animated zoomIn">
+								<div class="article-left ">
+									<img src="img/jzytp.JPG" alt="Spring boot 自定义配置">
+								</div>
+								<div class="article-right">
+									<div class="article-title">
+										<span class="article_is_yc">原创</span>&nbsp;
+										<a href="detail.html">Spring boot 自定义配置</a>
+									</div>
+									<div class="article-abstract">
+										配置文件 boot.name=龙旺 boot.sex=男 &nbsp; 1、@Value注解 用于逐个读取自定义的配置，比如： package com.lon</div>
+								</div>
+								<div class="clear"></div>
+								<div class="article-footer">
+									<span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;2018-07-27 15:17:33</span>
+									<span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;' 听雨·湘潭</span>
+									<span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="javascript:classifyList(5);"> SpringBoot</a></span>
+									<span class="article-viewinfo"><i class="fa fa-eye"></i>&nbsp;53</span>
+									<span class="article-viewinfo"><i class="fa fa-commenting"></i>&nbsp;0</span>
+								</div>
+							</div>
+							<div class="article shadow animated zoomIn">
+								<div class="article-left ">
+									<img src="img/jzytp.JPG" alt="Spring boot 的核心配置文件">
+								</div>
+								<div class="article-right">
+									<div class="article-title">
+										<span class="article_is_yc">原创</span>&nbsp;
+										<a href="detail.html">Spring boot 的核心配置文件</a>
+									</div>
+									<div class="article-abstract">
+										1、.properties文件 &nbsp;&nbsp;&nbsp;&nbsp; 键值对的properties属性文件配置方式 &nbsp;&nbsp;&nbsp;&amp;n
+
+									</div>
+								</div>
+								<div class="clear"></div>
+								<div class="article-footer">
+									<span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;2018-07-27 15:09:26</span>
+									<span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;' 听雨·湘潭</span>
+									<span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="javascript:classifyList(5);"> SpringBoot</a></span>
+									<span class="article-viewinfo"><i class="fa fa-eye"></i>&nbsp;69</span>
+									<span class="article-viewinfo"><i class="fa fa-commenting"></i>&nbsp;2</span>
+								</div>
+							</div>
+							<div class="article shadow animated zoomIn">
+								<div class="article-left ">
+									<img src="img/jzytp.JPG" alt="第一个 Spring boot 程序及解析">
+								</div>
+								<div class="article-right">
+									<div class="article-title">
+										<span class="article_is_yc">原创</span>&nbsp;
+										<a href="detail.html">第一个 Spring boot 程序及解析</a>
+									</div>
+									<div class="article-abstract">
+										1、创建一个Spring boot项目； &nbsp;&nbsp;&nbsp;&nbsp; 1、可以采用方式一： 使用 eclipse 的 Spring Tool Sui</div>
+								</div>
+								<div class="clear"></div>
+								<div class="article-footer">
+									<span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;2018-07-27 15:02:06</span>
+									<span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;' 听雨·湘潭</span>
+									<span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="javascript:classifyList(5);"> SpringBoot</a></span>
+									<span class="article-viewinfo"><i class="fa fa-eye"></i>&nbsp;45</span>
+									<span class="article-viewinfo"><i class="fa fa-commenting"></i>&nbsp;0</span>
+								</div>
+							</div>
+							<div class="article shadow animated zoomIn">
+								<div class="article-left ">
+									<img src="img/jzytp.JPG" alt="Spring boot 开发环境">
+								</div>
+								<div class="article-right">
+									<div class="article-title">
+										<span class="article_is_yc">原创</span>&nbsp;
+										<a href="detail.html">Spring boot 开发环境</a>
+									</div>
+									<div class="article-abstract">
+										springboot开发环境及工具推荐： 1、推荐使用Spring boot最新版本，目前 Spring Boot 最新正式版为2.0.3.RELEASE； 2、如果是
+
+									</div>
+								</div>
+								<div class="clear"></div>
+								<div class="article-footer">
+									<span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;2018-07-27 14:56:21</span>
+									<span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;' 听雨·湘潭</span>
+									<span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="javascript:classifyList(5);"> SpringBoot</a></span>
+									<span class="article-viewinfo"><i class="fa fa-eye"></i>&nbsp;56</span>
+									<span class="article-viewinfo"><i class="fa fa-commenting"></i>&nbsp;0</span>
+								</div>
+							</div>
+							<div class="article shadow animated zoomIn">
+								<div class="article-left ">
+									<img src="img/jzytp.JPG" alt="SpringBoot简介">
+								</div>
+								<div class="article-right">
+									<div class="article-title">
+										<span class="article_is_yc">原创</span>&nbsp;
+										<a href="detail.html">SpringBoot简介</a>
+									</div>
+									<div class="article-abstract">
+										Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不</div>
+								</div>
+								<div class="clear"></div>
+								<div class="article-footer">
+									<span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;2018-07-27 14:48:27</span>
+									<span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;' 听雨·湘潭</span>
+									<span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="javascript:classifyList(5);"> SpringBoot</a></span>
+									<span class="article-viewinfo"><i class="fa fa-eye"></i>&nbsp;37</span>
+									<span class="article-viewinfo"><i class="fa fa-commenting"></i>&nbsp;0</span>
+								</div>
+							</div>
+							<div class="layui-flow-more">
+								<a href="javascript:;"><cite>加载更多</cite></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="blog-main-right">
+
+						<div class="blogerinfo shadow animated fadeInRight">
+							<div class="blogerinfo-figure">
+								<img src="img/admin.jpg" alt="竹林听雨">
+							</div>
+							<p class="blogerinfo-nickname">竹林听雨</p>
+							<p class="blogerinfo-introduce">有个被嘲笑的梦想万一有天实现了呢？up up~</p>
+							<p class="blogerinfo-location"><i class="fa fa-location-arrow"></i>&nbsp;<span>湖南-湘潭</span></p>
+							<hr>
+							<div class="blogerinfo-contact">
+								<a target="_blank" id="QQjl" title="QQ交流" href="http://shang.qq.com/email/stop/email_stop.html?qq=2896543728"><i class="fa fa-qq fa-2x"></i></a>
+								<a target="_blank" id="gwxx" title="给我写信" href="mailto:2896543728@qq.com"><i class="fa fa-envelope fa-2x"></i></a>
+								<a target="_blank" id="xlwb" title="新浪微博" href="https://weibo.com/p/1005055534423586"><i class="fa fa-weibo fa-2x"></i></a>
+								<a target="_blank" id="htgl" title="后台管理" href="/toLogin"><i class="fa fa-database fa-2x"></i></a>
+							</div>
+						</div>
+
+						<div class="layui-tab layui-tab-brief shadow animated fadeInRight" lay-filter="docDemoTabBrief">
+							<ul class="layui-tab-title">
+								<li class="layui-this">点击排行</li>
+								<li>站长推荐</li>
+							</ul>
+							<div class="layui-tab-content">
+								<div class="layui-tab-item layui-show">
+									<ul class="blog-module-ul">
+										<li>
+											<span>
+<i class="layui-badge-rim layui-bg-red">1</i>
+</span> &nbsp;&nbsp;
+											<a href="detail.html">Tomcat优化性能，JVM优化</a>
+										</li>
+										<li>
+											<span>
+<i class="layui-badge-rim layui-bg-orange">2</i>
+</span> &nbsp;&nbsp;
+											<a href="detail.html">Redis安装</a>
+										</li>
+										<li>
+											<span>
+<i class="layui-badge-rim layui-bg-green">3</i>
+</span> &nbsp;&nbsp;
+											<a href="detail.html">Spring boot 使用 JSP</a>
+										</li>
+										<li>
+											<span>
+<i class="layui-badge-rim">4</i>
+</span> &nbsp;&nbsp;
+											<a href="detail.html">Spring Boot 表单验证@Valid</a>
+										</li>
+										<li>
+											<span>
+<i class="layui-badge-rim">5</i>
+</span> &nbsp;&nbsp;
+											<a href="detail.html">Spring boot 的核心配置文件</a>
+										</li>
+										<li>
+											<span>
+<i class="layui-badge-rim">6</i>
+</span> &nbsp;&nbsp;
+											<a href="detail.html">Centos7安装和配置jre1.8</a>
+										</li>
+										<li>
+											<span>
+<i class="layui-badge-rim">7</i>
+</span> &nbsp;&nbsp;
+											<a href="detail.html">centos7对外开放端口</a>
+										</li>
+										<li>
+											<span>
+<i class="layui-badge-rim">8</i>
+</span> &nbsp;&nbsp;
+											<a href="detail.html">怎么关闭eclipse对js xml的验证?</a>
+										</li>
+										<li>
+											<span>
+<i class="layui-badge-rim">9</i>
+</span> &nbsp;&nbsp;
+											<a href="detail.html">向百度主动推送以加快网页的收录速度！</a>
+										</li>
+										<li>
+											<span>
+<i class="layui-badge-rim">10</i>
+</span> &nbsp;&nbsp;
+											<a href="detail.html">支付宝开发者入驻</a>
+										</li>
+									</ul>
+								</div>
+								<div class="layui-tab-item">
+									<ul class="blog-module-ul">
+										<li>
+											<span class="article_is_yc">原创</span> &nbsp;&nbsp;
+											<a href="detail.html">Tomcat优化性能，JVM优化</a>
+										</li>
+										<li>
+											<span class="article_is_yc">原创</span> &nbsp;&nbsp;
+											<a href="detail.html">Redis安装</a>
+										</li>
+										<li>
+											<span class="article_is_yc">原创</span> &nbsp;&nbsp;
+											<a href="detail.html">Spring boot 使用 JSP</a>
+										</li>
+										<li>
+											<span class="article_is_yc">原创</span> &nbsp;&nbsp;
+											<a href="detail.html">Spring Boot 表单验证@Valid</a>
+										</li>
+										<li>
+											<span class="article_is_yc">原创</span> &nbsp;&nbsp;
+											<a href="detail.html">Spring boot 的核心配置文件</a>
+										</li>
+										<li>
+											<span class="article_is_yc">原创</span> &nbsp;&nbsp;
+											<a href="detail.html">Centos7安装和配置jre1.8</a>
+										</li>
+										<li>
+											<span class="article_is_yc">原创</span> &nbsp;&nbsp;
+											<a href="detail.html">centos7对外开放端口</a>
+										</li>
+										<li>
+											<span class="article_is_yc">原创</span> &nbsp;&nbsp;
+											<a href="detail.html">怎么关闭eclipse对js xml的验证?</a>
+										</li>
+										<li>
+											<span class="article_is_yc">原创</span> &nbsp;&nbsp;
+											<a href="detail.html">向百度主动推送以加快网页的收录速度！</a>
+										</li>
+										<li>
+											<span class="article_is_yc">原创</span> &nbsp;&nbsp;
+											<a href="detail.html">支付宝开发者入驻</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="blog-module shadow animated fadeInRight">
+							<div class="blog-module-title"><i class="fa fa-file-text-o"></i>&nbsp;博主介绍</div>
+							<p>Longwang，一枚90后的java程序员，好奇心比较强，目前是一个码农，从事Java方向的研究和开发。-- Longwang</p>
+						</div>
+						<div class="blog-module shadow animated fadeInRight fadeInUp">
+							<div class="blog-module-title"><i class="layui-icon"></i>&nbsp;热评用户</div>
+							<ul class="hotusers-list">
+								<li class="hotusers-list-item">
+									<div class="hotusers-top hotusers-num">1</div>
+									<div class="hotusers-avator">
+										<img src="http://qzapp.qlogo.cn/qzapp/101477629/B5D5212D0429E4491D932EEEF814FE99/100" width="45" height="45">
+									</div>
+									<div>
+										<div class="hotusers-nick">Mr.Long</div>
+										<span class="hotusers-level" title="等级1" style="background-image: url(https://changyan.itc.cn/v2/asset/scs/imgs/p-lv01.png);">
+<i style=" background-image:url(https://changyan.itc.cn/v2/asset/scs/imgs/p-lv01-04.png);">潜水</i>
+</span>
+										<span class="hotusers-totalcmt">本站评论数：4</span>
+									</div>
+									<span class="hotusers-icons"></span>
+								</li>
+								<li class="hotusers-list-item">
+									<div class="hotusers-top hotusers-num">2</div>
+									<div class="hotusers-avator">
+										<img src="http://qzapp.qlogo.cn/qzapp/101477629/142350DC6080D761759CA72042447829/100" width="45" height="45">
+									</div>
+									<div>
+										<div class="hotusers-nick">十七</div>
+										<span class="hotusers-level" title="等级2" style="background-image: url(https://changyan.itc.cn/v2/asset/scs/imgs/p-lv02.png);">
+<i style=" background-image:url(https://changyan.itc.cn/v2/asset/scs/imgs/p-lv01-04.png);">潜水</i>
+</span>
+										<span class="hotusers-totalcmt">本站评论数：2</span>
+									</div>
+									<span class="hotusers-icons"></span>
+								</li>
+								<li class="hotusers-list-item">
+									<div class="hotusers-top hotusers-num">3</div>
+									<div class="hotusers-avator">
+										<img src="http://qzapp.qlogo.cn/qzapp/101477629/436C863FE45FEBC7D279B0C22E9A62FD/100" width="45" height="45">
+									</div>
+									<div>
+										<div class="hotusers-nick">默〃</div>
+										<span class="hotusers-level" title="等级3" style="background-image: url(https://changyan.itc.cn/v2/asset/scs/imgs/p-lv03.png);">
+<i style=" background-image:url(https://changyan.itc.cn/v2/asset/scs/imgs/p-lv01-04.png);">潜水</i>
+</span>
+										<span class="hotusers-totalcmt">本站评论数：2</span>
+									</div>
+									<span class="hotusers-icons"></span>
+								</li>
+								<li class="hotusers-list-item">
+									<div class="hotusers-top hotusers-num">4</div>
+									<div class="hotusers-avator">
+										<img src="http://qzapp.qlogo.cn/qzapp/101477629/2F1EDDE252859E5FF645F959893C6863/100" width="45" height="45">
+									</div>
+									<div>
+										<div class="hotusers-nick">Single</div>
+										<span class="hotusers-level" title="等级4" style="background-image: url(https://changyan.itc.cn/v2/asset/scs/imgs/p-lv04.png);">
+<i style=" background-image:url(https://changyan.itc.cn/v2/asset/scs/imgs/p-lv01-04.png);">潜水</i>
+</span>
+										<span class="hotusers-totalcmt">本站评论数：1</span>
+									</div>
+									<span class="hotusers-icons"></span>
+								</li>
+								<li class="hotusers-list-item">
+									<div class="hotusers-top hotusers-num">5</div>
+									<div class="hotusers-avator">
+										<img src="http://qzapp.qlogo.cn/qzapp/101477629/0ABFEA14AAF50D3C07B6489440FEE081/100" width="45" height="45">
+									</div>
+									<div>
+										<div class="hotusers-nick">一念之间</div>
+										<span class="hotusers-level" title="等级5" style="background-image: url(https://changyan.itc.cn/v2/asset/scs/imgs/p-lv05.png);">
+<i style=" background-image:url(https://changyan.itc.cn/v2/asset/scs/imgs/p-lv01-04.png);">潜水</i>
+</span>
+										<span class="hotusers-totalcmt">本站评论数：1</span>
+									</div>
+									<span class="hotusers-icons"></span>
+								</li>
+							</ul>
+						</div>
+						<div class="blog-module shadow animated fadeInRight fadeInUp">
+							<div class="blog-module-title"><i class="layui-icon"></i>&nbsp;最近评论</div>
+							<ul class="recent-list">
+								<li class="hotusers-list-item">
+									<div data-name="那么平凡。" class="remark-user-avator">
+										<img src="http://qzapp.qlogo.cn/qzapp/101477629/194135EDCD4659E5550C71D6D665F3CB/100" width="45" height="45">
+									</div>
+									<div class="remark-content">博主威武</div>
+									<span class="hotusers-icons"></span>
+								</li>
+								<li class="hotusers-list-item">
+									<div data-name="开始了就别停下来" class="remark-user-avator">
+										<img src="http://qzapp.qlogo.cn/qzapp/101477629/436973EA919FEE0B67860BEC897ECC70/100" width="45" height="45">
+									</div>
+									<div class="remark-content">uiu</div>
+									<span class="hotusers-icons"></span>
+								</li>
+								<li class="hotusers-list-item">
+									<div data-name="【阿龙】" class="remark-user-avator">
+										<img src="http://qzapp.qlogo.cn/qzapp/101477629/6B925BE6DA65C32DCBE03772E56AA6C6/100" width="45" height="45">
+									</div>
+									<div class="remark-content">111</div>
+									<span class="hotusers-icons"></span>
+								</li>
+								<li class="hotusers-list-item">
+									<div data-name="Mr.Long" class="remark-user-avator">
+										<img src="http://qzapp.qlogo.cn/qzapp/101477629/B5D5212D0429E4491D932EEEF814FE99/100" width="45" height="45">
+									</div>
+									<div class="remark-content">还不错</div>
+									<span class="hotusers-icons"></span>
+								</li>
+								<li class="hotusers-list-item">
+									<div data-name="清风" class="remark-user-avator">
+										<img src="http://qzapp.qlogo.cn/qzapp/101477629/B4901BFB60F8DEE83F01692F2544E612/100" width="45" height="45">
+									</div>
+									<div class="remark-content">
+										<p>网站开源吗</p>
+										<p><br></p>
+									</div>
+									<span class="hotusers-icons"></span>
+								</li>
+								<li class="hotusers-list-item">
+									<div data-name="Mr.Long" class="remark-user-avator">
+										<img src="http://qzapp.qlogo.cn/qzapp/101477629/B5D5212D0429E4491D932EEEF814FE99/100" width="45" height="45">
+									</div>
+									<div class="remark-content">。。。。。。。。。。</div>
+									<span class="hotusers-icons"></span>
+								</li>
+								<li class="hotusers-list-item">
+									<div data-name="默〃" class="remark-user-avator">
+										<img src="http://qzapp.qlogo.cn/qzapp/101477629/436C863FE45FEBC7D279B0C22E9A62FD/100" width="45" height="45">
+									</div>
+									<div class="remark-content">
+										<p>旧时光博客博主&nbsp;https://www.zqfirst.top 来过</p>
+									</div>
+									<span class="hotusers-icons"></span>
+								</li>
+								<li class="hotusers-list-item">
+									<div data-name="默〃" class="remark-user-avator">
+										<img src="http://qzapp.qlogo.cn/qzapp/101477629/436C863FE45FEBC7D279B0C22E9A62FD/100" width="45" height="45">
+									</div>
+									<div class="remark-content">网站不错，继续加油。</div>
+									<span class="hotusers-icons"></span>
+								</li>
+								<li class="hotusers-list-item">
+									<div data-name="十七" class="remark-user-avator">
+										<img src="http://qzapp.qlogo.cn/qzapp/101477629/142350DC6080D761759CA72042447829/100" width="45" height="45">
+									</div>
+									<div class="remark-content">网站不错，学到东西了</div>
+									<span class="hotusers-icons"></span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="blog-module shadow animated fadeInRight">
+							<div class="blog-module-title"><i class="fa fa-link"></i>&nbsp;友情链接</div>
+							<ul class="blogroll">
+								<li>
+									<a target="_blank" href="http://wurao.xin" title="勿扰博客">勿扰博客</a>
+								</li>
+								<li>
+									<a target="_blank" href="http://blog.itcodai.com" title="ITcodai博客">ITcodai博客</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.zqfirst.top" title="旧时光">旧时光</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<footer id="f" class="blog-footer">
+			<p><span>Copyright</span><span>©</span><span>2018</span>
+				<a href="http://www.long225.cn">Long博客</a><span>Design By Longwang</span></p>
+			<p>
+				<a href="http://www.miitbeian.gov.cn" target="_blank">湘ICP备18010289号</a>
+			</p>
+		</footer>
+
+		<ul class="layui-nav layui-nav-tree layui-nav-side blog-nav-left layui-hide" lay-filter="nav">
+			<li class="layui-nav-item">
+				<a href="index.html"><i class="fa fa-home fa-fw"></i>&nbsp;网站首页</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="article.html"><i class="fa fa-file-text fa-fw"></i>&nbsp;文章专栏</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="mixed_pic.html"><i class="fa fa-paper-plane-o fa-fw"></i>&nbsp;杂七杂八</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="timeline.html"><i class="fa fa-road fa-fw"></i>&nbsp;点点滴滴</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="about.html"><i class="fa fa-info fa-fw"></i>&nbsp;关于本站</a>
+			</li>
+			<span class="layui-nav-bar"></span>
+		</ul>
+
+
+		<div class="blog-share layui-hide">
+			<div class="blog-share-body">
+				<div style="width: 200px;height:100%;">
+					<div class="bdsharebuttonbox bdshare-button-style0-32" data-bd-bind="1533783041273">
+						<a class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+						<a class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+						<a class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+						<a class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="blog-mask animated layui-hide"></div>
+
+		<script src="js/jquery.min.js"></script>
+
+		<script src="layui/layui.js"></script>
+
+		<script src="js/global.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+
+</html>
